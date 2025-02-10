@@ -1,17 +1,11 @@
 "use client";
 import { useState } from "react";
-import { useState } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
 
 const links = [
-  { name: "Home", path: "/" },
-  { name: "Services", path: "/services" },
-  { name: "Resume", path: "/resume" },
-  { name: "Work", path: "/work" },
-  { name: "Contact", path: "/contact" },
   { name: "Home", path: "/" },
   { name: "Services", path: "/services" },
   { name: "Resume", path: "/resume" },

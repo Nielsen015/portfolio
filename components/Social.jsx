@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaGithub, FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa";
+import {FaXTwitter} from "react-icons/fa6";
 
 const socials = [
   { icon: <FaGithub />, path: "https://github.com/Nielsen015" },
@@ -7,7 +8,7 @@ const socials = [
     icon: <FaLinkedinIn />,
     path: "https://www.linkedin.com/in/moses-nielsen/",
   },
-  { icon: <FaTwitter />, path: "https://x.com/moses_nielsen" },
+  { icon: <FaXTwitter />, path: "https://x.com/moses_nielsen" },
   { icon: <FaInstagram />, path: "https://www.instagram.com/nielsen.moses/" },
 ];
 const Social = ({ containerStyles, iconStyles }) => {
