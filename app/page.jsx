@@ -4,6 +4,7 @@ import Link from "next/link";
 import Social from "@/components/Social";
 import { Button } from "@/components/ui/button";
 import Photo from "@/components/Photo";
+import Stats from "@/components/Stats";
 const Home = () => {
 return (
 <section className="h-full">
@@ -42,6 +43,7 @@ return (
             </div>
         </div>
     </div>
+    <Stats />
 </section>
 );
 };
