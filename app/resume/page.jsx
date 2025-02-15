@@ -36,7 +36,7 @@ const about = {
 const experience = {
   icon: '/assets/resume/badge.svg',
   title: "My Experience",
-  description: "A dynamic Software Engineer with a proven track record of delivering high-quality software solutions that align with organizational objectives. Proficient in leveraging cutting-edge technologies and methodologies, with expertise in full-stack development, including React, AngularJS, and Node.js. Possess a robust understanding of databases, both SQL and NoSQL, such as PostgreSQL, MySQL, and MongoDB. Skilled in multiple programming languages, including Python, Java, and JavaScript. Adept in agile project management and dedicated to providing top-notch customer service, with exceptional communication and problem-solving abilities. Ready to drive innovation and deliver impactful results in the field of software engineering.",
+  description: "A dynamic Software Engineer with a proven track record of delivering high-quality software solutions that align with organizational objectives.",
   items: [
     {
       company: "SG NewTech",
@@ -164,7 +164,34 @@ const resume = () => {
       {/* content */}
       <div className="min-h-[70vh] w-full" >
       {/* Experience */}
-      <TabsContent value="experience" className="w-full">Experience</TabsContent>
+      <TabsContent value="experience" className="w-full">
+        <div className="flex flex-col gap-[30px] text-center xl:text-left">
+          <h3 className="text-4xl font-bold">{experience.title}</h3>
+          <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{experience.description}</p>
+          <ScrollArea className="h-[400]">
+            <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">{experience.items.map((item, index)=>{
+              return(
+                <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                  <span className="text-accent">{item.duration}</span>
+                  <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
+                  <div>
+                    {/* dot */}
+                    <span>
+                      <p>{item.company}</p>
+                    </span>
+                  </div>
+                </li>
+              )
+            })}</ul>
+          </ScrollArea>
+        </div>
+      </TabsContent>
+      {/* Eduaction */}
+      <TabsContent value="education" className="w-full">Eduaction</TabsContent>
+      {/* Skills */}
+      <TabsContent value="skills" className="w-full">Skills</TabsContent>
+      {/* About */}
+      <TabsContent value="about" className="w-full">About Me</TabsContent>
       </div>
     </Tabs>
    </div></motion.div>;
