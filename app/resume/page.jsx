@@ -6,8 +6,8 @@ import { FaHtml5,FaCss3, FaJs,FaReact, FaFigma, FaNodeJs,FaPython } from "react-
 import { SiTailwindcss, SiNextdotjs, SiPhp, SiAdobephotoshop, SiLaravel, SiMysql, SiMongodb } from "react-icons/si";
 
 const about = {
-  Title: "About Me",
-  description: "I’m a dedicated software engineer with a deep passion for leveraging technology to solve real-world problems. My journey into software development was driven by a fascination with how code can transform ideas into tangible, impactful solutions.I thrive on tackling complex challenges and enjoy the process of continuous learning and growth in this ever-evolving field. What motivates me is the opportunity to create innovative and efficient software that makes a difference. Whether working on cutting-edge projects or refining existing systems, I am driven by the challenge of delivering high-quality solutions that exceed expectations and contribute to meaningful progress.",
+  title: "About Me",
+  description: "I am a dedicated software engineer with a deep passion for leveraging technology to solve real-world problems. My journey into software development was driven by a fascination with how code can transform ideas into tangible, impactful solutions.I thrive on tackling complex challenges and enjoy the process of continuous learning and growth in this ever-evolving field. What motivates me is the opportunity to create innovative and efficient software that makes a difference. Whether working on cutting-edge projects or refining existing systems, I am driven by the challenge of delivering high-quality solutions that exceed expectations and contribute to meaningful progress.",
   info: [
     {
       fieldname: "Name",
@@ -222,15 +222,15 @@ const resume = () => {
           <h3 className="text-4xl font-bold">{skills.title}</h3>
           <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
         </div>
-        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px]">
+        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
           {skills.skillSet.map((skill, index)=>{
             return <li key={index}>
-            <TooltipProvider>
+            <TooltipProvider delayDuration={100}>
               <Tooltip>
-                <TooltipTrigger>
-                  <div className="">{skill.icon}</div>
+                <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                  <div className="text-5xl group-hover:text-accent transition-all duration-300">{skill.icon}</div>
                 </TooltipTrigger>
-                <TooltipContent><p>{skill.name}</p></TooltipContent>
+                <TooltipContent><p className="capitalize">{skill.name}</p></TooltipContent>
               </Tooltip>
             </TooltipProvider>
             </li>;
@@ -238,7 +238,20 @@ const resume = () => {
         </ul>
       </div></TabsContent>
       {/* About */}
-      <TabsContent value="about" className="w-full">About Me</TabsContent>
+      <TabsContent value="about" className="w-full text-center xl:text-left">
+      <div className="flex flex-col gap-[30px]">
+        <h3 className="text-4xl font-bold">{about.title}</h3>
+        <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
+        <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w[620px] mx-auto xl:mx-0">
+          {about.info.map((item,index)=>{
+            return <li key="index" className="flex items-center justify-center xl:justify-start gap-4">
+              <span className="text-white/60">{item.fieldname}</span>
+              <span className="text-xl">{item.fieldValue}</span>
+            </li>
+          })}
+        </ul>
+      </div>
+      </TabsContent>
       </div>
     </Tabs>
    </div></motion.div>;
