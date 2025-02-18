@@ -21,6 +21,7 @@ const Social = ({ containerStyles, iconStyles }) => {
             href={item.path}
             target="_blank"
             className={iconStyles}
+            rel="noopener noreferrer"
           >
             {item.icon}
           </Link>
