@@ -136,12 +136,6 @@ const skills = {
     },{
       icon: <SiNextdotjs />,
       name: "Next.js",
-    },{
-      icon: <SiMongodb />,
-      name: "MongoDB",
-    },{
-      icon: <SiMysql />,
-      name: "MySQL",
     }
   ]
 };
