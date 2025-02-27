@@ -175,8 +175,8 @@ const Contact = () => {
                           <SelectLabel>Select a Service</SelectLabel>
                           <SelectItem value="Web Development">Web Development</SelectItem>
                           <SelectItem value="UI/UX Design">UI/UX Design</SelectItem>
-                          <SelectItem value="design">Graphic and Logo Design</SelectItem>
-                          <SelectItem value="Graphic and Logo Design">System Integration</SelectItem>
+                          <SelectItem value="Graphic and Logo Design">Graphic and Logo Design</SelectItem>
+                          <SelectItem value="System Integration">System Integration</SelectItem>
                           <SelectItem value="Consultation and maintenance">Consultation and maintenance</SelectItem>
                         </SelectGroup>
                       </SelectContent>
