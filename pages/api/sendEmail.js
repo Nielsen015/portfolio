@@ -192,7 +192,7 @@ body, table, td, p, a, li, blockquote {
 <tbody>
 <tr>
     <td style="display:none;font-size:0;line-height:0;color:#111111;">
-		 Sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+		 Contact form filled from your portfolio website.
 	</td>
 </tr>
 <tr>
