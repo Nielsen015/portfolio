@@ -173,11 +173,11 @@ const Contact = () => {
                       <SelectContent>
                         <SelectGroup>
                           <SelectLabel>Select a Service</SelectLabel>
-                          <SelectItem value="web">Web Development</SelectItem>
-                          <SelectItem value="ui">UI/UX Design</SelectItem>
+                          <SelectItem value="Web Development">Web Development</SelectItem>
+                          <SelectItem value="UI/UX Design">UI/UX Design</SelectItem>
                           <SelectItem value="design">Graphic and Logo Design</SelectItem>
-                          <SelectItem value="int">System Integration</SelectItem>
-                          <SelectItem value="cnt">Consultation and maintenance</SelectItem>
+                          <SelectItem value="Graphic and Logo Design">System Integration</SelectItem>
+                          <SelectItem value="Consultation and maintenance">Consultation and maintenance</SelectItem>
                         </SelectGroup>
                       </SelectContent>
                     </Select>
