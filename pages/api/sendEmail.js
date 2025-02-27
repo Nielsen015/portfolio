@@ -221,13 +221,6 @@ body, table, td, p, a, li, blockquote {
 						<table cellpadding="0" cellspacing="0" border="0" role="presentation" align="center" bgcolor="#00e187">
 						<tr>
 							<td>
-								<table cellpadding="0" cellspacing="0" border="0" align="center" role="presentation">
-								<tr>
-									<td align="center">
-										<img src="/public/assets/Nielsen.jpg" alt="image" width="220" height="220" class="logo">
-									</td>
-								</tr>
-								</table>
 								<table cellpadding="0" cellspacing="0" border="0" align="center" width="640" style="width: 640px; min-width: 640px;" role="presentation" bgcolor="#00e187">
 								<tr>
 									<td height="35" style="line-height:35px;min-height:35px;">
