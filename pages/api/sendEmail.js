@@ -209,7 +209,7 @@ body, table, td, p, a, li, blockquote {
 		<tbody>
 		<tr width="640" style="width: 640px; min-width: 640px; " align="center">
 			<td>
-				<table cellpadding="0" cellspacing="0" border="0" align="center" width="640" style="width: 640px; min-width: 640px;" role="presentation" bgcolor="#4f48e0">
+				<table cellpadding="0" cellspacing="0" border="0" align="center" width="640" style="width: 640px; min-width: 640px;" role="presentation" bgcolor="#00e187">
 				<tr>
 					<td height="35" style="line-height:35px;min-height:35px;">
 					</td>
