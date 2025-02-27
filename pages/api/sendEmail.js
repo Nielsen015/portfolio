@@ -215,10 +215,10 @@ body, table, td, p, a, li, blockquote {
 					</td>
 				</tr>
 				</table>
-				<table cellpadding="0" cellspacing="0" border="0" width="640" style="width: 640px; min-width: 640px;" role="presentation" align="center" bgcolor="#4f48e0">
+				<table cellpadding="0" cellspacing="0" border="0" width="640" style="width: 640px; min-width: 640px;" role="presentation" align="center" bgcolor="#00e187">
 				<tr>
 					<td align="left">
-						<table cellpadding="0" cellspacing="0" border="0" role="presentation" align="center" bgcolor="#4f48e0">
+						<table cellpadding="0" cellspacing="0" border="0" role="presentation" align="center" bgcolor="#00e187">
 						<tr>
 							<td>
 								<table cellpadding="0" cellspacing="0" border="0" align="center" role="presentation">
@@ -228,7 +228,7 @@ body, table, td, p, a, li, blockquote {
 									</td>
 								</tr>
 								</table>
-								<table cellpadding="0" cellspacing="0" border="0" align="center" width="640" style="width: 640px; min-width: 640px;" role="presentation" bgcolor="#4f48e0">
+								<table cellpadding="0" cellspacing="0" border="0" align="center" width="640" style="width: 640px; min-width: 640px;" role="presentation" bgcolor="#00e187">
 								<tr>
 									<td height="35" style="line-height:35px;min-height:35px;">
 									</td>
@@ -260,19 +260,19 @@ body, table, td, p, a, li, blockquote {
 		</tr>
 		<tr>
 			<td align="left" style="color:#5a5a5a;padding:20px 40px 0 40px;font-family:  Arial, Helvetica, sans-serif;font-weight:normal;font-size:16px;-webkit-font-smoothing:antialiased;line-height:1.4;" class="table-container">
-				  From: ${email},
+				  From: ${email}
 			</td>
 		</tr><tr>
 			<td align="left" style="color:#5a5a5a;padding:20px 40px 0 40px;font-family:  Arial, Helvetica, sans-serif;font-weight:normal;font-size:16px;-webkit-font-smoothing:antialiased;line-height:1.4;" class="table-container">
-				  Sender's Name: <b>${name},</b>
+				  Sender's Name: <b>${name}</b>
 			</td>
 		</tr><tr>
 			<td align="left" style="color:#5a5a5a;padding:20px 40px 0 40px;font-family:  Arial, Helvetica, sans-serif;font-weight:normal;font-size:16px;-webkit-font-smoothing:antialiased;line-height:1.4;" class="table-container">
-				  Sender's Phone: <b>${phone},</b>
+				  Sender's Phone: <b>${phone}</b>
 			</td>
 		</tr><tr>
 			<td align="left" style="color:#5a5a5a;padding:20px 40px 0 40px;font-family:  Arial, Helvetica, sans-serif;font-weight:normal;font-size:16px;-webkit-font-smoothing:antialiased;line-height:1.4;" class="table-container">
-				  Service Request: <b>${service},</b>
+				  Service Request: <b>${service}</b>
 			</td>
 		</tr>
 		</tbody>
@@ -308,7 +308,7 @@ body, table, td, p, a, li, blockquote {
         <w:anchorlock/>
         <center>
           <![endif]-->
-				<a href="mailto:${email}?subject=Feedback on Service request for ${service}" style="background-color: #ff5746; color: #ffffff; display: inline-block;font-family:  Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; text-align: center; font-weight: bold; text-decoration: none; padding: 20px 25px; min-width: 150px; -webkit-text-size-adjust: none;">Send Feedback</a>
+				<a href="mailto:${email}?subject=Feedback on Service request for ${service}" style="background-color: #00e187; color: #ffffff; display: inline-block;font-family:  Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; text-align: center; font-weight: bold; text-decoration: none; padding: 20px 25px; min-width: 150px; -webkit-text-size-adjust: none;">Send Feedback</a>
 				<!--[if mso]>
         </center>
       </v:roundrect>
