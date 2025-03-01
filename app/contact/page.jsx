@@ -48,7 +48,7 @@ const formSchema = z.object({
   message: z.string().min(10, "Message must be at least 10 characters"),
 });
 
-const Contact = () => {
+const Contact = () => { 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const {
@@ -76,7 +76,7 @@ const Contact = () => {
 
       if (response.ok) {
         toast.success("Message sent successfully!", {
-          duration: 30000, // 30 seconds
+          duration: 10000, // 10 seconds
           position: "top-right",
         });
         reset(); // Clear the form
