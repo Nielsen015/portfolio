@@ -27,8 +27,55 @@ const projects = [
     live: "https://breatherleatherke.com/",
     github: "https://github.com/Nielsen015/BreatherLeather",
   },
+{
+  num: "02",
+  category: "POS & Inventory System",
+  title: "Deekay Motorcycle Spares POS",
+  description: "A feature-rich Point of Sale system built with Laravel, designed for all business types. Includes modules for sales, purchases, stock management, expenses, and reporting.",
+  stack: [
+    { name: "Laravel" },
+    { name: "PHP" },
+    { name: "MySQL" },
+    { name: "Tailwind UI" },
+    { name: "JavaScript" }
+  ],
+  image: "/assets/projects/pos.png",
+  live: "https://posdeck.online/login",
+  github: "https://github.com/Nielsen015"
+},
+{
+  num: "03",
+  category: "Marketing Website",
+  title: "Agriwatt Hub Corporate Site",
+  description: "A sleek JavaScript-based marketing website that highlights Agriwatt Hub's mission in agricultural training and digital empowerment. Integrated with WhatsApp and redirects to the online shop.",
+  stack: [
+    { name: "HTML5" },
+    { name: "JavaScript" },
+    { name: "CSS3" },
+    { name: "Bootstrap" }
+  ],
+  image: "/assets/projects/web.png",
+  live: "https://agriwatthub.com/",
+  github: "https://github.com/Nielsen015"
+},
+{
+  num: "04",
+  category: "E-Commerce Platform",
+  title: "Agriwatt Hub Online Shop",
+  description: "A Laravel-based e-commerce platform for Agriwatt Hub, offering a modern shopping experience with product search, category filtering, cart, wishlist, and 24/7 customer support features.",
+  stack: [
+    { name: "Laravel" },
+    { name: "Blade Templates" },
+    { name: "PHP 8+" },
+    { name: "MySQL" },
+    { name: "JavaScript" }
+  ],
+  image: "/assets/projects/agri.png",
+  live: "https://shop.agriwatthub.com/",
+  github: "https://github.com/Nielsen015"
+}, 
   {
-    num: "02",
+    num: "05",
     category: "Web Development",
     title: "Business Web App",
     description: "A dynamic portfolio website developed with React, showcasing the innovative work of Jasiri Labs. Emphasizes clean design, smooth animations, and a user-friendly interface.",
@@ -43,7 +90,7 @@ const projects = [
     github: "https://github.com/Jasiri-Labs-Tech/jasiri-labs-website-frontend",
   },
   {
-    num: "03",
+    num: "06",
     category: "Web Development",
     title: "Rental Web App",
     description: "A comprehensive system for managing rental properties, offering features like property listings, tenant management, and payment tracking. Built with a focus on usability and efficiency.",
@@ -58,7 +105,7 @@ const projects = [
     github: "https://github.com/Nielsen015/Real-Estate-agency",
   },
   {
-    num: "04",
+    num: "07",
     category: "Web Development",
     title: "Ecommerce",
     description: "An e-commerce solution with an intuitive UI, designed to enhance the online shopping experience. Includes product catalogs, cart functionality, and secure checkout processes.",
@@ -73,7 +120,7 @@ const projects = [
     github: "https://github.com/Nielsen015/shop",
   },
   {
-    num: "05",
+    num: "08",
     category: "Graphic Design",
     title: "Poster Designs",
     description: "A collection of visually striking event poster designs,logos created to capture attention and communicate key information effectively. Reflects my ability to blend creativity with purpose.",
@@ -104,7 +151,7 @@ const Work = () => {
     <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
     <div className="flex flex-col gap-[30px] h-[50%]">
       {/* outline num */}
-      <div className="text-8xl leading-none font-extrabold text-transparent text-outline">{project.num}</div>
+      <div className="font-extrabold leading-none text-transparent text-8xl text-outline">{project.num}</div>
       {/* project category */}
       <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.category} project</h2>
       {/* project description */}
@@ -127,7 +174,7 @@ const Work = () => {
           <TooltipProvider delayDuration={100}>
             <Tooltip>
               <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                <BsArrowUpRight className="text-white text-3xl group-hover:text-accent"></BsArrowUpRight>
+                <BsArrowUpRight className="text-3xl text-white group-hover:text-accent"></BsArrowUpRight>
               </TooltipTrigger>
               <TooltipContent>
                 <p>Visit Site</p>
@@ -138,7 +185,7 @@ const Work = () => {
           <TooltipProvider delayDuration={100}>
             <Tooltip>
               <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                <BsGithub className="text-white text-3xl group-hover:text-accent"></BsGithub>
+                <BsGithub className="text-3xl text-white group-hover:text-accent"></BsGithub>
               </TooltipTrigger>
               <TooltipContent>
                 <p>Github Repository</p>
@@ -155,7 +202,7 @@ const Work = () => {
             return <SwiperSlide key={index} className="w-full">
               <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
               {/* overlay */}
-                <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                <div className="absolute top-0 bottom-0 z-10 w-full h-full bg-black/10"></div>
                 {/* image */}
                 <div className="relative w-full h-full"><Image src={project.image} fill className="object-cover" alt="live image"></Image></div>
               </div>
