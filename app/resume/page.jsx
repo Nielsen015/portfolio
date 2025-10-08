@@ -69,7 +69,7 @@ const experience = {
 // Eduaction data
 const education = {
   icon: '/assets/resume/cap.svg',
-  title: "My Eduaction",
+  title: "My Education",
   description: "My academic journey has been a cornerstone of my professional development, equipping me with the knowledge, skills, and critical thinking necessary to excel in my field.",
   items: [
     {
